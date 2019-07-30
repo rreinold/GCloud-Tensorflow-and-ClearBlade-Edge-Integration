@@ -23,7 +23,10 @@ This is an ipm package, which contains one or more reusable assets within the ip
 
 1. Setup on Google Cloud Platform: 
 - Execute the following commands to setup Google Cloud CLI (Can be done by using Google Cloud Console)
-  - Download and Install Google SDK : **curl https://sdk.cloud.google.com | bash**
+  - Download and Install Google SDK : 
+  ```
+  **curl https://sdk.cloud.google.com | bash**
+  ```
   - Initialize the SDK : **gcloud init** 
   - Initializing the SDK will prompt you to authorize your account and to select a project or create a new project.
   - Create a New Service : **gcloud beta iam service-accounts create *<SERVICE_NAME>***
@@ -38,6 +41,9 @@ This is an ipm package, which contains one or more reusable assets within the ip
 - Before setting up the ClearBlade service, please ensure that you have successfully completed the Google Cloud Platform setup.
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory
+- Go to the Platform and Open this System. 
+- Create a new user with **username=*test@email.com*** and **password=*password***
+- Use these credentials to open the portals.
 - Navigate to Edges on ClearBlade Platform and Install the *TrainingEdge* : https://docs.clearblade.com/v/4/edge/tutorial/.
 An Adapter is running on this edge which installs all the dependencies required for training the model.
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to train the model.
