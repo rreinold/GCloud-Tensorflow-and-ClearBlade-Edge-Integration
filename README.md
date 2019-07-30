@@ -34,16 +34,16 @@ This is an ipm package, which contains one or more reusable assets within the ip
   - Initializing the SDK will prompt you to authorize your account and to select a project or create a new project.
   - Create a New Service : 
   ```
-  gcloud beta iam service-accounts create *<SERVICE_NAME>*
+  gcloud beta iam service-accounts create <SERVICE_NAME>
   ```
   - Grant permissions to the service to create and manage buckets on the GCloud: 
   ```
-  gcloud projects add-iam-policy-binding *<PROJECT_NAME>* --member serviceAccount:*<SERVICE_NAME>*@*<PROJECT_NAME>*.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
+  gcloud projects add-iam-policy-binding <PROJECT_NAME> --member serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com --role roles/cloudbuild.builds.builder
   ```
   - In some cases, this command fails to execute if the user doesn't have permissions to provide access rights to the project. In this case, once a service account is created, go to https://console.cloud.google.com/storage/browser and manually create a new bucket.
   - Once this bucket is created, execute the following command: 
   ```
-  **gsutil iam ch serviceAccount:*<SERVICE_NAME>*@*<PROJECT_NAME>*.iam.gserviceaccount.com:roles/storage.admin gs://*<BUCKET_NAME>***
+  gsutil iam ch serviceAccount:<SERVICE_NAME>@<PROJECT_NAME>.iam.gserviceaccount.com:roles/storage.admin gs://<BUCKET_NAME>
   ```
   This will grant storage admin permissions to the service.
 - Once all the steps are done, follow the Setup Steps for starting ClearBlade adapter services.
