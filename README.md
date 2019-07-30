@@ -97,6 +97,10 @@ The ```Testing of the model``` can be done by the following steps:
 - Click on **Get Features for Prediction** to get all the features that were used for the training process.
 - Enter all the data and press the **Predict** button to get the Predicted value.
 
+### System Overview Diagram
+
+![alt text](https://github.com/rajasd27/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Architecture%20Diagram.png)
+
 ### Sequential Diagram
 
 ![alt text](https://github.com/rajasd27/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Sequential%20Diagram.png)
@@ -138,8 +142,4 @@ The ```Testing of the model``` can be done by the following steps:
 ```TestingPortal```: This portal essentially allows the user to:
 - Fetch Features used for Training the Model
 - Input Features to predict a particular value
-
-## System Overview Diagram
-
-![alt text](https://github.com/rajasd27/GCloud-Tensorflow-and-ClearBlade-Edge-Integration/blob/master/Architecture%20Diagram.png)
 
