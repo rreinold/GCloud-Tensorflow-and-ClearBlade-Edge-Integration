@@ -50,13 +50,18 @@ This is an ipm package, which contains one or more reusable assets within the ip
 
 
 2. Setup on ClearBlade:
-- Before setting up the ClearBlade service, please ensure that you have successfully completed the Google Cloud Platform setup.
 - Open a Terminal on your Machine.
 - Create a new Directory and navigate to that Directory
-- Go to the Platform and Open this System. 
-- Create a new user with **username=*test@email.com*** and **password=*password***
+
+[//]: TODO-MissingSystemInstall
+
+- Go to the Platform Web Developer Console and select this System. 
+- Create a new user with **username=*test@clearblade.com*** and select a secure password
 - Use these credentials to open the portals.
 - Navigate to Edges on ClearBlade Platform and Install the *TrainingEdge* : https://docs.clearblade.com/v/4/edge/tutorial/.
+
+[//]:Please-explicitly-list-edge-setup-here
+
 An Adapter is running on this edge which installs all the dependencies required for training the model.
 - Go to the portals and click on *TrainingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to train the model.
 - Once, the model is trained it is ready to be tested. 
@@ -67,16 +72,19 @@ An Adapter is running on this edge which installs all the dependencies required 
   - Change your Directory : **cd Test/**
   - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
   An Adapter is running on this edge which installs all the dependencies required for testing the model. 
-  - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
-  
+
+## Training Neural Network
+
  - Testing on the different machine:
    - Open a Terminal on your Machine.
    - Create a new Directory and navigate to that Directory
+
+[//]: Edge-install-should-be-in-setup
+
    - Navigate to Edges on the Platform and Install *MLEdge* : https://docs.clearblade.com/v/4/edge/tutorial/. 
    An Adapter is running on this edge which installs all the dependencies required for testing the model. 
    - Go to the portals and click on *TestingPortal* and follow the steps mentioned in the [**USAGE**](#usage-1) to test the model.
   
-## Usage
 
 Machine Learning models essentially work in two phases - ```Training Phase and Testing Phase```. The model needs to be Trained before it can be tested. 
 
@@ -91,7 +99,7 @@ The ```Training of the model``` can be done by the following steps:
 - The next tab is the **Clean Data** Tab which helps you to remove any empty rows from the data by clicking on **Delete Empty Rows** and handle categorical Data by clicking on **View Categorical Data**. Once cleaning of data is done, click **NEXT** to proceed.
 - This tab is the **Train Model** which will essentially initiate the training process. Here, you need to enter all the parameters required for initiating the training process. You can also tune the hyperparameters of the model as per your needs. Once, all the information is entered, click on **Train Model** to train the model. Once, the training process is done, the model gets stored in the ModelArchitecture Collection.
 
-The ```Testing of the model``` can be done by the following steps:
+### Executing Neural Network
 
 - Open the TestingPortal from the Portals option in the ClearBlade Platform Tab
 - Click on **Get Features for Prediction** to get all the features that were used for the training process.
